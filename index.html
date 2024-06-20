@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>Care connect</title>
+<link rel="stylesheet" href="style.css">
+<title>Slide Navbar</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link 
+href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,50
+0;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=s
+wap" rel="stylesheet">
+</head>
+<body>
+<div class="logo">
+<div>
+<p width="100px" style="font-size:50px;font-family:forte;"> <font color="#eee"> Care 
+</font><font color="#eee"> Connect</font></p>
+</div>
+</div>
+<div class="main">
+<input type="checkbox" id="chk" aria-hidden="true">
+<div class="signup" >
+<form action="signup.php" method="POST" >
+<label for="chk" aria-hidden="true">Sign up</label>
+<input type="text" name="fname" id="fname" placeholder="User name" required="">
+<input type="email" name="email" id="email" placeholder="Email" required="">
+<input type="password" name="pass" id="pass" placeholder="Password" required="">
+<input type="submit" id="btn" value="SignUp" name = "submit"/>
+</form>
+</div>
+<div class="login">
+<form action="login.php" method="POST" onsubmit="return isvalid()">
+<label for="chk" aria-hidden="true">Login</label>
+<input type="text" name="fname" id="fname" placeholder="User name" required="">
+<input type="password" name="pass" id="pass" placeholder="Password" required="">
+<input type="submit" id="btn" value="Login" name = "submit"/>
+</form>
+</div>
+</div>
+32
+<script>
+function isvalid(){
+var fname = document.form.fname.value;
+if(fname.length==""){
+alert(" Enter username or email id!");
+return false;
+}
+}
+</script>
+</body>
+</html>
